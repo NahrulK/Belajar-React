@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// import { Component } from 'react/cjs/react.production.min';
+import Navbar from './Navbar';
+import Hatiga from './Hatiga';
+
+
+// Arrow Fuction
+const Navbarjuga = () => {
+  return (
+    <div>
+      <h3>Ini Adalah H3</h3>
+    </div>
+  )
+}
+ 
+
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return ( 
+
+    <div className='App'>
+      <Navbarjuga/> <br/>
+      <Navbar/>
+      <Hatiga />
+      <p>Ini adalah Paragrapf</p>
     </div>
+  
   );
 }
+
 
 export default App;
